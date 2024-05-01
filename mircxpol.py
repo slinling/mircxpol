@@ -42,10 +42,10 @@ def Jall(alt, az, m13, p13, m47, p47, m819, p819):
 
 def C(I, Q, U, V):
     CC = np.array([[I + Q, U - V * 1j], [U + V * 1j, I - Q]])
-    if I**2 < (Q**2 + U**2 + V**2):
-        raise ValueError(f"I^2 < (Q^2 + U^2 + V^2)")
-    else:
-        return CC / 2
+    # if I**2 < (Q**2 + U**2 + V**2):
+    #     raise ValueError(f"I^2 < (Q^2 + U^2 + V^2)")
+    # else:
+    return CC / 2
 
 def C_(I, Q, U, V):
     CC = np.array([[I + Q, U - V * 1j], [U + V * 1j, I - Q]])
